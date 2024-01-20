@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>Joke generator</title>
+    <!-- CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("download.jpg");
+            display: flex;
+            font-family: 'Noto Color Emoji', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+        }
+
+        .container {
+            background-color: rgb(248, 248, 248);
+            font-size: 20px;
+            padding: 25px;
+            border-radius: 12px;
+            min-height: 40vh;
+            text-align: center;
+            width: 900px;
+        }
+
+        button {
+            background-color: black;
+            color: aliceblue;
+            font-weight: bold;
+            font-size: large;
+            width: 140px;
+            height: 50px;
+            border-radius: 15px;
+            font-family: 'Noto Color Emoji', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generate A Joke and Have Fun😃</h1>
+        <button onclick="getJoke()"> Click Here😉</button>
+        <div id="jokeContainer"></div>
+    </div>
+    <script src="./apiPractice.js"></script>
+</body>
+
+</html>
